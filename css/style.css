@@ -1,7 +1,10 @@
 body {
-      font-family: Arial;
+      font-family: 'Cuprum', sans-serif;
       margin: 0;
     }
+figure{
+   margin-right: 0;
+}
 .wrapper{
       display: grid;
       grid-template: 85px 500px 1fr 1fr 1fr / 1fr;
@@ -15,7 +18,9 @@ body {
 
    }
 .header {
-
+         
+      font-family: 'Oswald', sans-serif;
+      
       grid-area: "header";
       
       
@@ -31,26 +36,68 @@ body {
    grid-area: "header-top";
    color: white;
    background-color: black;
+   
 
    display: grid;
-   grid-template: 35px / 1fr 1fr;
+   grid-template: 35px / 1.3fr 1fr;
    grid-template-areas: "header-top-left"
                         "header-top-right"
                         ;
+   align-items: center;
+
+}
+.header-top a {
+   color: white;
+   text-decoration: none;
 
 }
 .header-top-left{
+   margin-left: 80px;
    grid-area: "header-top-left";
+   display: flex;
+
+
+
+}
+.header-top-left h4,h6 {
+   margin:0;
+   
+   text-transform:uppercase;
+}
+.header-top-left h6 {
+   margin-left: 20px;
+   font-size: 0.68em;
+   align-self: center;
+
 }
 .header-top-right{
+   margin-right: 80px;
    grid-area: "header-top-right";
+   justify-self: right;
+   
+}
+.header-top-right-nav {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
 }
 .header-top-right-nav li{
-   display: inline;
+   text-transform: uppercase;
+   font-size: 0.70em;
+   
+   margin-right: 17px;
+}
+.header-top-right-nav i{
+   margin-right: 5px;
+}
+.header-top-right-nav li span{
+   margin-left: 10px;
 }
 
 .header-bottom{
    grid-area: "header-bottom";
+   border-bottom: 2px solid rgba(180,180,180,0.7);
    background-color: white;
 }
 .hero {
