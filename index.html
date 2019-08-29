@@ -32,7 +32,7 @@
 				<div class="header-top-left">
 					<h4>Envio Gratis en todo el pais</h4><h6>por compras mayores a 10.000 colones</h6></div>
 				<div class="header-top-right">
-					<nav >
+					<nav class="header-top-right-menu" >
 						<ul class="header-top-right-nav">
 							<li>
 								<a href="">
@@ -40,7 +40,7 @@
 								buscar</a>
 							</li>
 							<li>
-								<a href="">ingresa</a>
+								<a href="">ingresar</a>
 							</li>
 							<li>
 								<a href="">
@@ -48,7 +48,7 @@
 								<i class="fas fa-shopping-cart"></i>
 								carrito
 								<span>0</span>
-								<span>₡ 000.00 CRC</span>
+								<span>₡ 10.000.00 CRC</span>
 								</a>
 								
 								
@@ -60,10 +60,40 @@
 				
 			</div>
 			<div class="header-bottom">
+				<div class="search">
+					<form class="searchForm" action="/search" method="get">
+						<input class="searchInput" type="text" name="searchInput" placeholder="BUSCAR">
+						
+					</form>
+					<a href="">
+						<i class="fas fa-times fa-lg"></i>
+					</a>
+				</div>
 				<figure class="logo">
-					<img src="" alt="Logo de http://www.myrakle.com">
+					<a href="">
+						<img src="images/LogoSideways1.png" alt="Logo de http://www.myrakle.com">
+					</a>
 				</figure>
-				header bottom
+				<nav class="header-bottom-menu">
+					<ul class="header-bottom-nav">
+						<li>
+							<a href="">Bio-Detox</a>
+						</li>
+						<li>
+							<a href="">Ampollas</a>
+						</li>
+						<li>
+							<a href="">Cocktails</a>
+						</li>
+						<li>
+							<a href="">Encuentra un Salon</a>
+						</li>
+						<li>
+							<a href="">Profesionales</a>
+						</li>
+					</ul>
+				</nav>
+
 			</div>
 			
 		</header>
@@ -74,30 +104,175 @@
 		<section class="store">
 			<article class="product">
 				<figure class="product-imageContainer">
-					<img src="">
+					<img src="images/products/p001.png">
 				</figure>
-				<h3>Nombre de Producto</h3>
-				<p><small> Descripcion del produco</small></p>
-				<h5>Precio</h5>
+				<h3>Myrakle Ampolla Argan</h3>
+				<p><small>Tratamiento Termoactivo especial para cabellos maltratados con el poder hidratante del Aceite de Argan</small></p>
+				<h5>₡ 12.000 </h5>
 				<a href="">comprar</a>
 
 			</article>
-			store
+			<article class="product">
+				<figure class="product-imageContainer">
+					<img src="images/products/p002.png">
+				</figure>
+				<h3>Myrakle Ampolla Brillo de Seda</h3>
+				<p><small> Descripcion del produco</small></p>
+				<h5>₡ 12.000 </h5>
+				<a href="">comprar</a>
+
+			</article>
+			<article class="product">
+				<figure class="product-imageContainer">
+					<img src="images/products/p003.png">
+				</figure>
+				<h3>Myrakle Ampolla Semi di Lino</h3>
+				<p><small> Descripcion del produco</small></p>
+				<h5>₡ 12.000 </h5>
+				<a href="">comprar</a>
+
+			</article>
+			<article class="product">
+				<figure class="product-imageContainer">
+					<img src="images/products/p004.png">
+				</figure>
+				<h3>Myrakle Ampola Vitamina E</h3>
+				<p><small> Descripcion del produco</small></p>
+				<h5>₡ 12.000</h5>
+				<a href="">comprar</a>
+
+			</article>
+			<article class="product">
+				<figure class="product-imageContainer">
+					<img src="images/products/p005.png">
+				</figure>
+				<h3>Myrakle Cocktail Argan</h3>
+				<p><small> Descripcion del produco</small></p>
+				<h5>₡ 12.000</h5>
+				<a href="">comprar</a>
+
+			</article>
+			<article class="product">
+				<figure class="product-imageContainer">
+					<img src="images/products/p006.png">
+				</figure>
+				<h3>Myrakle Cocktail Semi di Lino</h3>
+				<p><small> Descripcion del produco</small></p>
+				<h5>₡ 12.000</h5>
+				<a href="">comprar</a>
+
+			</article>
+			<article class="product">
+				<figure class="product-imageContainer">
+					<img src="images/products/p007.png">
+				</figure>
+				<h3>Myrakle Cocktail Brillo de Seda</h3>
+				<p><small> Descripcion del produco</small></p>
+				<h5>₡ 12.000</h5>
+				<a href="">comprar</a>
+
+			</article>
+			<article class="product">
+				<figure class="product-imageContainer">
+					<img src="images/products/p008.png">
+				</figure>
+				<h3>Myrakle Cocktail Vitamina E</h3>
+				<p><small> Descripcion del produco</small></p>
+				<h5>₡ 12.000</h5>
+				<a href="">comprar</a>
+
+			</article>
+			
 		</section>
 		<section class="categories">
-			categories
+			
+			<a class="ampollas" href="">
+				<div class="button">
+					<h2>Ampollas</h2>
+				</div>
+			</a>
+			<a class="cocktails" href="">
+				<div class="button">
+					<h2>Cocktails</h2>
+				</div>
+			</a>
+			<a class="tratamientos" href="">
+				<div class="button">
+					<h2>Tratamientos</h2>
+				</div>
+			</a>
+			
+			
+			
 		</section>
 		<section class="signup">
 			<form action="">
-				<h3>Registrate para mas descuentos</h3>
-				<input type="text" name="name" placeholder="Déjanos tu nombre">
-				<input type="text" name="email" placeholder="Déjanos tu email" id="email">
-				<input type="submit" name="submit-btn" value="enviar">
+				<h3>Quieres una demostracion Gratis</h3>
+				<p>Si eres profesional vamos a tu salon, tu eliges la modelo, y dejate improsionar por Myrakle.</p>
+				<input class="signupName" type="text" name="name" placeholder="tu nombre">
+				<input class="signupPhone" type="text" name="phone" placeholder="tu telefono">
+				<input class="signupEmail" type="text" name="email" placeholder="tu email" id="email">
+				<input class="signupSubmit" type="submit" name="submit-btn" value="enviar">
 				
 			</form>
 		</section>
 		<footer class="footer">
-			footer
+			<div class="footertop">
+				
+				<nav class="footer-top-menu">
+					<ul class="footer-top-nav">
+						<li>
+							<a href="">Empresa</a>
+						</li>
+						<li>
+							<a href="">Tienda</a>
+						</li>
+						<li>
+							<a href="">Envios</a>
+						</li>
+						<li>
+							<a href="">Preguntas Frecuentes</a>
+						</li>
+						<li>
+							<a href="">Encuentra un Salon</a>
+						</li>
+						<li>
+							<a href="">Distribuidores</a>
+						</li>
+						<li>
+							<a href="">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footerhero">
+				<figure class="logofooter">
+					<a href="">
+						<img src="images/LogoBlack1.png" alt="Logo de http://www.myrakle.com">
+					</a>
+				</figure>
+				<a href="">
+					<i class="fab fa-facebook-square fa-5x"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-instagram fa-5x"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-youtube fa-5x"></i>
+				</a>
+				<a href="">
+					<i class="fab fa-twitter fa-5x"></i>
+				</a>	
+					
+				
+			</div>
+			<div class="footerbottom">
+				<p>Copyright © Todos los derechos reservados</p>
+				<p>Hecho en Costa Rica con Orgullo</p>
+				<p>Condiciones de Uso - Politica de Privacidad</p>
+				
+			</div>
+			
 		</footer>
 	</div>
 </body>
