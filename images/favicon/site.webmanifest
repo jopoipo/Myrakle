@@ -3,7 +3,7 @@
     "short_name": "Myrakle",
     "icons": [
         {
-            "src": "https://jopoipo.github.io/Myrakle/images/favicon/android-chrome-192x192.png",
+            "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
