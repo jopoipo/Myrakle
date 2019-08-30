@@ -116,6 +116,17 @@ figure{
 .header-top-right-nav i{
    margin-right: 0.5em;
 }
+
+.cartPanel{
+   color: black;
+   position: absolute;
+   height: 12rem;
+   width: inherit;
+   border-radius: 0.4rem;
+   background:white;
+   z-index:10000;
+   transition: height 0.3s linear 0s;
+}
 .header-bottom{
    font-family: 'Cuprum', sans-serif;
    color: black;
