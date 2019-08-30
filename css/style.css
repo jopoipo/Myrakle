@@ -344,7 +344,7 @@ figure{
 .cocktails{
       grid-area: cocktails;
       background-color: blue;
-      background-image: url(../images/cocktails1.png);
+      background-image: url(https://jopoipo.github.io/Myrakle/images/Cocktails1.png);
       background-repeat: no-repeat;
       background-size: 480px 480px;
       background-position: center;
