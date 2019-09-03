@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- hojas de estilos -->
 <!-- Javascript -->
-	<!-- <script type="text/javascript" src="scripts/myrakle.js"></script> -->
+	<script type="text/javascript" src="scripts/myrakle.js"></script>
 <!-- Javascript -->
 <!-- Iconos -->
 	<script src="https://kit.fontawesome.com/3a2f05afda.js"></script>
@@ -38,7 +38,7 @@
 					<nav class="header-top-right-menu" >
 						<ul class="header-top-right-nav">
 							<li>
-								<a href="">
+								<a class="searchButton" onclick="tooglePanel('searchPanel')">
 								<i class="fas fa-search"></i>
 								buscar</a>
 							</li>
@@ -46,7 +46,7 @@
 								<a href="">ingresar</a>
 							</li>
 							<li>
-								<a onclick="openPanel()" href="">
+								<a class="cartButton" onclick="tooglePanel('cartPanel')">
 								
 								<i class="fas fa-shopping-cart"></i>
 								carrito
@@ -59,28 +59,88 @@
 						</ul>
 					</nav>
 					<div id="cartPanel" class="cartPanel">
-						<h3>Agrega produtos al carro aaaaaaaaaaaaaaaa aaaaaa</h3>
+						<div class="cartPanelHeader">
+							<h3>Mi Carrito</h3>
+							<i onclick="tooglePanel('cartPanel')" class="fas fa-times fa-sm cartClose"></i>
+						</div>
+						<hr>
+						<div class="cartItemList">
+							<div class="cartItem">
+								<figure class="cartProductPic">
+									<img src="images/products/p001.png" alt="">
+								</figure>
+								<p class="cartItemDesc" >Ampollas Argan x 7</p>
+								<input class="cartQty" type="text" name="cartQty" value="1">
+								<h6>₡ 10.000</h6>
+								<a class="cartRemove" href="">Eliminar</a>
+							</div>
+							<div class="cartItem">
+								<figure class="cartProductPic">
+									<img src="images/products/p002.png" alt="">
+								</figure>
+								<p class="cartItemDesc" >Ampollas Vitamina E x 7</p>
+								<input class="cartQty" type="text" name="cartQty" value="1">
+								<h6>₡ 14.000</h6>
+								<a class="cartRemove" href="">Eliminar</a>
+							</div>
+							<div class="cartItem">
+								<figure class="cartProductPic">
+									<img src="images/products/p002.png" alt="">
+								</figure>
+								<p class="cartItemDesc" >Ampollas Vitamina E x 7</p>
+								<input class="cartQty" type="text" name="cartQty" value="1">
+								<h6>₡ 14.000</h6>
+								<a class="cartRemove" href="">Eliminar</a>
+							</div>
+							<div class="cartItem">
+								<figure class="cartProductPic">
+									<img src="images/products/p002.png" alt="">
+								</figure>
+								<p class="cartItemDesc" >Ampollas Vitamina E x 7</p>
+								<input class="cartQty" type="text" name="cartQty" value="1">
+								<h6>₡ 14.000</h6>
+								<a class="cartRemove" href="">Eliminar</a>
+							</div>
+							<div class="cartItem">
+								<figure class="cartProductPic">
+									<img src="images/products/p002.png" alt="">
+								</figure>
+								<p class="cartItemDesc" >Ampollas Vitamina E x 7</p>
+								<input class="cartQty" type="text" name="cartQty" value="1">
+								<h6>₡ 14.000</h6>
+								<a class="cartRemove" href="">Eliminar</a>
+							</div>
+							
+						</div>	
+						<hr>
+						<div class="cartTotal">
+							<h4>Total</h4>
+							<h3>₡ 60.000</h3>
+						</div>
+						<div class="cartCheckout" >
+							<div class="cartCheckoutButton" >Checkout</div>
+						</div>
 					</div>
 					
 				</div>
 				
 			</div>
 			<div class="header-bottom">
-				<div class="search">
+				<div id="searchPanel" class="searchPanel">
 					<form class="searchForm" action="/search" method="get">
 						<input class="searchInput" type="text" name="searchInput" placeholder="BUSCAR">
 						
 					</form>
-					<a href="">
+					<a class="searchClose" onclick="tooglePanel('searchPanel')">
 						<i class="fas fa-times fa-lg"></i>
 					</a>
 				</div>
-				<figure class="logo">
+				<figure id="logo" class="logo">
 					<a href="">
 						<img src="images/LogoSideways1.png" alt="Logo de http://www.myrakle.com">
 					</a>
 				</figure>
-				<nav class="header-bottom-menu">
+				<nav id="header-bottom-nav" class="header-bottom-menu">
 					<ul class="header-bottom-nav">
 						<li>
 							<a href="">Bio-Detox</a>

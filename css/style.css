@@ -49,6 +49,9 @@ figure{
    align-items: center;
    padding-left: 5%;
    padding-right: 5%;
+   border-bottom-style: solid;
+   border-bottom-width:  1px;
+   border-bottom-color: lightgray;
 
 }
 .header-top a {
@@ -112,20 +115,11 @@ figure{
    display: flex;
    align-items: center;
 
-}
-.header-top-right-nav i{
-   margin-right: 0.5em;
+
 }
 
-.cartPanel{
-   color: black;
-   position: absolute;
-   height: 12rem;
-   width: inherit;
-   border-radius: 0.4rem;
-   background:white;
-   z-index:10000;
-   transition: height 0.3s linear 0s;
+.header-top-right-nav i{
+   margin-right: 0.5em;
 }
 .header-bottom{
    font-family: 'Cuprum', sans-serif;
@@ -143,11 +137,147 @@ figure{
    
 
 }
-.search{
+.cartButton:hover {
+ cursor:pointer;
+}
+
+.cartPanel{
+   color: black;
+   position: absolute;
+   height: 0;
+
+   width: 25rem;
+   border-radius: 0.4rem;
+   background:white;
+   z-index:10000;
+   transition: height 0.3s linear 0s;
+   overflow:hidden;
+   
+   border-style: solid;
+   border-width:  1px;
+   border-color: lightgray;
+}
+.cartPanel hr{
+   margin: 1rem 2rem;
+
+}
+.cartPanelHeader{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px;
+  /* border-color: lightgray;
+   border-bottom-style: solid;*/
+   margin-left: 2rem;
+   margin-right: 2rem;
+   
+}
+.cartPanelHeader h3{
+   font-family: 'Cuprum', sans-serif;
+   font-weight: 100;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 0;
+}
+.cartClose{
+   padding-top: 1rem;
+   padding-right: 1rem;
+}
+.cartClose:hover{
+   cursor:pointer;
+}
+.cartItemList{
+   max-height: 10rem;
+   overflow-y: auto;
+   margin-right: 1rem;
+}
+.cartItem{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 1rem;
+   padding-left: 2rem;
+   
+}
+.cartProductPic{
+   margin: 0;
+}
+.cartProductPic img{
+   width: 2.5rem;
+}
+.cartItemDesc{
+   font-family: 'Cuprum', sans-serif;
+   font-weight: 100;
+   font-size: 0.8em;
+   width: 6rem;
+}
+
+.cartQty{
+   font-family: 'Cuprum', sans-serif;
+   font-weight: 100;
+   font-size: 0.8em;
+   width: 2rem;
+   text-align: center;
+}
+.cartRemove{
+   color:red!important;
+   font-family: 'Cuprum', sans-serif;
+   font-weight: 100;
+   font-size: 0.7em;
+
+   
+}
+.cartTotal{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 3rem;
+   margin-right: 3rem;
+}
+.cartTotal h4,h3{
+   margin: 0;
+}
+.cartCheckout{
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+}
+.cartCheckoutButton{
+      display: inline-flex;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      border-radius: 0.3rem;
+
+      text-decoration: none;
+      background-color: black;
+      width: 10rem;
+      height: 2rem;
+      color: white;
+      text-transform: uppercase;
+      border: 2px;
+      border-color: black;
+      border-style: solid;
+      
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.35s ease;
+}
+.cartCheckoutButton:hover{
+      cursor: pointer;
+      background-color: white;
+      color: black;
+   
+      border-style: solid;
+}
+.searchButton:hover{
+      cursor: pointer;
+}
+.searchPanel{
    
    height: inherit;
    width: 100%;
-   /*display: flex;*/
+  
    display: none;
    align-items: center;
 }
@@ -165,6 +295,9 @@ figure{
    outline: none;
 
 
+}
+.searchClose:hover{
+   cursor: pointer;
 }
 .logo{
    /*display: none;*/
