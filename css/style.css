@@ -446,7 +446,7 @@ figure{
 }
 .categories {
 
-      grid-area: "categories";
+      grid-area: categories;
       display: grid;
       padding-top: 3%;
       padding-bottom: 1%;
