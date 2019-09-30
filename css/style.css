@@ -7,14 +7,21 @@ figure{
 }
 .wrapper{
       display: grid;
-      grid-template: 5.3em 36em 1fr 50em 32em 15em / 1fr;
+     /* grid-template: 5.3em 36em 1fr 50em 32em 15em / 1fr;
       grid-template-areas: "header"
                            "hero"
                            "store"
                            "categories"
                            "signup"
                            "footer"
+                           ;*/
+      grid-template: 5.3em 1fr 15em / 1fr;
+      grid-template-areas: "header"
+                           "content"
+                           "footer"
                            ;
+
+
 
    }
 .header {
@@ -349,7 +356,21 @@ figure{
 .header-bottom-nav li a:hover {
    color: LightGray;
 }
+.content{
+   grid-area: content;
 
+}
+.home{
+   display: grid;
+   grid-template: 36em 1fr 50em 32em/ 1fr;
+   grid-template-areas:    "hero"
+                           "store"
+                           "categories"
+                           "signup"
+                           
+                           ;
+
+}
 .hero {
       
       
@@ -770,4 +791,32 @@ figure{
    height: 0.8rem;
    width: 1rem;
    
+}
+.salonsListBig{
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+
+
+}
+.salonBig{
+   margin-left: 5%;
+   margin-right: 5%;
+   display: grid;
+   grid-template: 1fr / 1fr 1fr 1fr;
+      grid-template-areas: "figure location details"
+                           ;
+
+}
+.salonBigFigure{
+   grid-area: figure;
+   background-color: red;
+}
+.salonBigLocation{
+   grid-area: location;
+   background-color: blue;
+
+}
+.salonBigDetails{
+   grid-area: details;
+   background-color: yellow;
 }
