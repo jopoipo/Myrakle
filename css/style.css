@@ -694,4 +694,31 @@ figure{
       margin-top: 0;
       margin-bottom: 0;
 }
+/* Estilos pagina de cocteles*/
+.herococktails { 
+      
+      
+     /* grid-area: herococktails;*/
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* inicio codigo de background gradiente gris*/
+      background: rgb(255,255,255);
+      background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(232,232,235,1) 100%);
+       /* fin codigo de background gradiente gris*/
+     
+    }
+.containerherococktails h1 {
+      font-size: 3.15rem;
+      font-family: 'Cuprum', sans-serif;
+      text-align: center;
+      color: black;
+   }
 
+   .imagecocktails{
+      grid-area: imagecocktails;
+      background-color: blue;
+      background-image: url(https://jopoipo.github.io/Myrakle/images/Cocktails1.png);
+      background-repeat: no-repeat;
+      background-size: 480px 480px;
+      background-position: center;
