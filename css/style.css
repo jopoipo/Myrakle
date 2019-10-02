@@ -508,11 +508,6 @@ figure{
 
 .cocktails{
       grid-area: cocktails;
-      background-color: blue;
-      background-image: url(https://jopoipo.github.io/Myrakle/images/Cocktails1.png);
-      background-repeat: no-repeat;
-      background-size: 480px 480px;
-      background-position: center;
 }
 
 .tratamientos{
@@ -717,34 +712,83 @@ figure{
 }
 
 /* Estilos pagina de cocteles*/
-.herococktails { 
-      
-      
+.HeroCocktails { 
      /* grid-area: herococktails;*/
-     display: flex;
-     align-items: center;
-     justify-content: center;
+    /* display: flex;
      /* inicio codigo de background gradiente gris*/
+      justify-content: center;
       background: rgb(255,255,255);
       background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(232,232,235,1) 100%);
        /* fin codigo de background gradiente gris*/
      
     }
-.containerherococktails h1 {
-      font-size: 3.15rem;
-      font-family: 'Cuprum', sans-serif;
+.HeroCocktails h1 {
+      text-transform: capitalize;
+      font-size: 2.8rem;
+      font-family: 'Oswald', sans-serif;
       text-align: center;
       color: black;
+      margin-bottom: 1rem;
+      margin-top: 0;
+   }
+.HeroCocktails h3 {
+      font-size: 1.45rem;
+      font-family: 'Cuprum', sans-serif;
+      font-weight: 100;
+      text-align: center;
+      color: black;
+}
+.HeroCocktails h4 {
+    
+      font-family: 'Cuprum', sans-serif;
+      font-weight: 100;
+      text-align: center;
+      color: black;
+      margin-bottom: 1rem;
+
    }
 
-   .imagecocktails{
-      grid-area: imagecocktails;
-      background-color: blue;
-      background-image: url(https://jopoipo.github.io/Myrakle/images/Cocktails1.png);
-      background-repeat: no-repeat;
-      background-size: 480px 480px;
-      background-position: center;
 
+
+.cocktail-ImageHero {
+   text-align: center;
+}
+
+.cocktail-ImageHero img {
+   height:300px;
+   align-items: center;
+}
+
+.showCocktail-ImageContainer{
+   margin: 0;
+
+}
+
+.showCocktail-ImageContainer img {
+   /*colocar estos parametros para las fotos de los articulos de cockteles*/
+   height: 250px;
+   width: 250px;
+
+}
+.detailCocktails {
+ padding-left: 5%;
+ padding-right: 5%;
+ padding-top: 2rem;  
+}
+
+.showCocktail{
+   display: flex;
+   justify-content: center;
+}
+
+.left img {
+margin-right: 3rem;
+}
+
+
+.right img {
+margin-left: 3rem;
+}
 .salonsHeader{
       display: flex;
       justify-content: center;
