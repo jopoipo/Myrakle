@@ -59,6 +59,7 @@ figure{
    border-bottom-style: solid;
    border-bottom-width:  1px;
    border-bottom-color: lightgray;
+   z-index: 99999999;
 
 }
 .header-top a {
@@ -744,13 +745,16 @@ figure{
       background-repeat: no-repeat;
       background-size: 480px 480px;
       background-position: center;
+}
 
 .salonsHeader{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       background-color: gray;
       color: white;
+      padding-left: 5%;
+      padding-right: 5%;
       
 }
 .salonsHeader h1{
@@ -770,7 +774,39 @@ figure{
       font-size: 1.3em;
       outline: none;
 }
+.salonsHeader select:hover{
+   cursor:pointer;
+}
+.salonCountry{
+   display: flex;
+   margin-left: 38%;
+}
+.salonListView{
+   display: flex;
+   align-items: center;
+   
 
+}
+.salonListView i {
+   margin-left: 1.2rem;
+}
+.salonListView a{
+   text-decoration: none;
+   color: white;
+   display:flex;
+   align-items: center;
+}
+.salonsFilter{
+   height: 2rem;
+   background-color: lightgray;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.salonsFilter label{
+   margin-left: 0.5rem;
+   margin-right: 1rem;
+}
 .salonsList{
       display: flex;
       margin-left: 3rem;
@@ -823,7 +859,7 @@ figure{
    
 }
 .salonsListBig{
-   padding-top: 2rem;
+   
    padding-bottom: 2rem;
 
 
@@ -831,23 +867,197 @@ figure{
 .salonBig{
    margin-left: 5%;
    margin-right: 5%;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
    display: grid;
    grid-template: 1fr / 1fr 1fr 1fr;
-      grid-template-areas: "figure location details"
+   grid-template-areas: "figure location details"
                            ;
 
 }
-.salonBigFigure{
+.salonBigPic{
    grid-area: figure;
-   background-color: red;
+   display: flex;
+   flex-wrap: wrap;
+   
+   justify-content: center;
+   align-items: center;
+  
+    width: 404px;
+    height: 226px;
+     
+
+
+}
+.salonBigPic img{
+   width: inherit;
+   height: inherit;
+   opacity: 0.9;
+    
+
+}
+
+.salonBigPic h2 {
+   color: white;
+   font-size: 1.8rem;
+
+   position: absolute;
+   border-style: solid;
+   border-color: white;
+   border-width: 2px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: rgba(110,110,110,0.5);
+  border-radius: 6px;
+   margin: 0;
 }
 .salonBigLocation{
    grid-area: location;
-   background-color: blue;
+   
+   
+   margin: 0;
+   padding: 0;
+   line-height: 0;
+
+}
+.salonBigMap{
+   height: 100%;
+   width: 100%;
+   background-image: url(../images/map1.png);
+   background-position: center;
+   background-size: auto;
+   opacity: 0.8;
+   display: flex;
+   align-items: flex-end;
+   
+}
+.mapDetails{
+   height: 8rem;
+   width: 100%;
+   background-color: rgba(50,50,50,0.7);
+   text-align: center;
+   padding-top: 1rem;
+
+   color: white;
+   
+   
+   
+}
+.phoneDetails{
+   display: flex;
+   line-height: 0;
+   justify-content: center;
+   align-items: center;
+}
+.mapDetails i{
+
+   margin-right: 0.5rem;
+}
+.mapDetails p{
+   font-size: 1.1rem;
+   padding-bottom: 0.2rem;
+
+}
+.mapDetails h4{
+   margin: 0;
+   font-size: 1.2rem;
+   font-weight: 200;
 
 }
 .salonBigDetails{
    grid-area: details;
-   background-color: yellow;
+   background-color: rgba(20,20,20,0.9);
+   color: white;
+   text-align: center;
+
+}
+.salonBigContainer{
+
+   display: flex;
+   justify-content: center;
+}
+.salonBigButton{
+
+   border-style: solid;
+   border-color: white;
+   border-width: 2px;
+   border-radius: 6px;
+   color: white;
+   height: 2rem;
+   width: 8rem;
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+
+
+}
+.salonBigDetails p{
+   margin: 0;
+}
+.salonBigDetails h4{
+   margin-left: 1rem;
+   margin-right: 1rem;
+   margin-bottom: 0.8rem;
+   font-size: 1.4rem;
+   font-weight: 100;
+   font-family: 'Dancing Script', cursive;
+}
+.salonBigDetails h6{
+   font-size: 1rem;
+   text-align: right;
+   font-weight: 200;
+   margin-right: 2rem;
+}
+.salonBigQuote{
+   margin-bottom: 2rem;
+}
+/* CSS Contact US*/
+.contactUsHero{
+   height: 50rem;
+   background-color: red;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 2rem;
+
+
+}
+.contactSales{
+   height: 24rem;
+   background-color: blue;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   
+}
+.contactClients{
+   height: 20rem;
+   width: 22rem;
+   background-color: green;
+}
+.contactProfessionals{
+   height: 20rem;
+   width: 22rem;
+   background-color: green;
+}
+.contactDistributions{
+   height: 20rem;
+   width: 22rem;
+   background-color: green;
 }
 
+.contactCustomerService{
+   height: 22rem;
+   background-color: blue;
+   
+
+}
+
+.contactheadquarter{
+   height: 25rem;
+   background-color: green;
+}
