@@ -1015,49 +1015,277 @@ figure{
    margin-bottom: 2rem;
 }
 /* CSS Contact US*/
+.contactUs{
+   
+   margin:0;
+   padding: 0;
+}
 .contactUsHero{
-   height: 50rem;
-   background-color: red;
+   height: 55rem;
+  
+   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(232,232,235,1) 100%);
    padding-left: 5%;
    padding-right: 5%;
-   padding-top: 2rem;
-
+   padding-top: 0.5rem;
+   padding-bottom: 2rem;
+   
 
 }
 .contactSales{
    height: 24rem;
-   background-color: blue;
+   
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-left: 1rem;
-   padding-right: 1rem;
+   
    
 }
 .contactClients{
-   height: 20rem;
-   width: 22rem;
-   background-color: green;
+   text-align: center;
+   height: 23rem;
+   width: 30%;
+   background-color: white;
+   box-shadow: 2px 2px 5px 0px rgba(105,105,105,1);
+
+}
+.contactClients img{
+   width: 6rem;
+   margin-top: 1rem;
+}
+.contactClients h3{
+   font-size: 1.2rem;
+   margin-top: 1rem;
+   margin-bottom: 1.1rem;
+}
+.contactClients h6{
+   font-size: 0.9rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   font-weight: 100;
+}
+
+.contactWhatsapp{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 2rem;
+}
+.contactWhatsapp p{
+   font-size: 1.6rem;
+   font-weight: 200;
+   margin: 0;
+   margin-left: 1rem;
+
 }
 .contactProfessionals{
-   height: 20rem;
-   width: 22rem;
-   background-color: green;
+   height: 23rem;
+   width: 30%;
+   background-color: white;
+   text-align: center;
+   box-shadow: 2px 2px 5px 0px rgba(105,105,105,1);
+
+}
+.contactProfessionals img{
+   width: 6rem;
+   margin-top: 1rem;
+}
+.contactProfessionals h3{
+   font-size: 1.2rem;
+   margin-top: 1rem;
+   margin-bottom: 1.1rem;
+}
+.contactProfessionals h6{
+   font-size: 0.9rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   font-weight: 100;   
+}
+.contactProfessionals p{
+   margin-right: 1rem;
+   margin-left: 1rem;
 }
 .contactDistributions{
-   height: 20rem;
-   width: 22rem;
-   background-color: green;
+   height: 23rem;
+   width: 30%;
+   background-color: white;
+   text-align: center;
+   box-shadow: 2px 2px 5px 0px rgba(105,105,105,1);
+}
+.contactDistributions img{
+   width: 6rem;
+   margin-top: 1rem;
+}
+.contactDistributions h3{
+   font-size: 1.2rem;
+   margin-top: 1rem;
+   margin-bottom: 1.1rem;
+}
+.contactDistributions h6{
+   font-size: 0.9rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   font-weight: 100;   
+}
+.contactDistributions p{
+   margin: 1rem;
 }
 
 .contactCustomerService{
    height: 22rem;
-   background-color: blue;
+   background-color: white;
+   
+   box-shadow: 2px 2px 5px 0px rgba(105,105,105,1);
    
 
 }
+.customerServiceQuote{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 4rem;
+   padding-right: 3rem;
+   padding-left: 3rem;
+   padding-bottom: 2rem;
+   background-image: url("../images/bluebg.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 76rem 15rem;
 
-.contactheadquarter{
-   height: 25rem;
-   background-color: green;
+}
+.customerServiceQuote img{
+   border-radius: 50%;
+   width: 7rem;
+
+   margin-left: 4rem;
+   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+
+}
+.customerServiceQuote h3{
+   font-weight: 100;
+   font-size: 1.5rem;
+   text-align:left;
+   margin-right: 3rem;
+   margin-left: 3rem;
+   font-style: italic;
+
+}
+.customerServiceQuote h6{
+   text-align: right;
+   margin-right: 7rem;
+   font-size: 1rem;
+   font-weight: 200;
+   line-height: 1.5rem;
+
+}
+.customerServiceActions{
+   padding-top: 0.5rem;
+   padding-left: 6rem;
+   padding-right: 6rem;
+   margin-right: 3rem;
+   margin-left: 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.customerServiceActions i{
+   color: rgb(2, 67, 134);
+}
+.customerServiceActions p{
+   font-size: 1.2rem;
+}
+
+.action{
+   text-align: center;
+   color: rgb(2, 67, 134);
+}
+.action a{
+   text-decoration: none;
+}
+/*FAQ*/
+
+.faq{
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-bottom: 2rem;
+}
+.faqContainer{
+   
+}
+.faqContainer h1{
+   font-size: 2.2rem;
+}
+.faqTitle{
+   text-align: center;
+}
+.faqCategories{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 2rem;
+   padding-bottom: 1rem;
+
+   
+}
+.category{
+   height: 4rem;
+   width: 12rem;
+   background-color: lightgray;
+   color: black;
+   cursor:pointer;
+
+   margin-right: 1rem;
+}
+.category:hover{
+   background-color: rgba(105,105,105,0.7);
+   
+}
+.category h2{
+   font-weight: 200;
+   margin-left: 1rem;
+   margin-top: 2rem;
+   font-size: 1.1rem;
+}
+.categoryActive{
+   background-color: black;
+   color: white;
+}
+.questionsContainer{
+   padding-left: 5rem;
+   padding-right: 5rem;
+}
+.faqQuestions{
+   
+  
+   
+   display: none;
+}
+.question{
+   height: 3rem;
+   border-bottom-style: dashed;
+   border-bottom-width: 1.5px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+}
+.question h5{
+
+   margin: 0;
+   font-size: 1rem;
+   text-transform: uppercase;
+   cursor: pointer;
+
+}
+.question i{
+   cursor: pointer;
+}
+
+.answer{
+   height: 3rem;
+   display: none;
+}
+.answer h2{
+   font-size: 1.2rem;
+   font-weight: 100;
 }
