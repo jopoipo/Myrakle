@@ -718,35 +718,117 @@ figure{
 }
 
 /* Estilos pagina de cocteles*/
+
+.cocktailsPage{
+   display: grid;
+}
 .herococktails { 
       
       
-     /* grid-area: herococktails;*/
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     /* inicio codigo de background gradiente gris*/
-      background: rgb(255,255,255);
-      background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(232,232,235,1) 100%);
-       /* fin codigo de background gradiente gris*/
      
-    }
-.containerherococktails h1 {
-      font-size: 3.15rem;
-      font-family: 'Cuprum', sans-serif;
+      background: rgb(255,255,255);
       text-align: center;
-      color: black;
-   }
+      background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(200,200,200,1) 100%);
+    }
 
-   .imagecocktails{
-      grid-area: imagecocktails;
-      background-color: blue;
-      background-image: url(https://jopoipo.github.io/Myrakle/images/Cocktails1.png);
+.containerherococktails{
+      height: 32rem;
+      background-image: url(../images/cocktailsHero.png);
       background-repeat: no-repeat;
-      background-size: 480px 480px;
-      background-position: center;
+      background-position: bottom;
+      background-size: 65%;
+      
+  
+  
 }
 
+.containerherococktails h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      
+      color: black;
+   }
+.containerherococktails h6 {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+}
+
+.btnBuy {
+      display: inline-flex;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      border-radius: 0.3rem;
+
+      text-decoration: none;
+      background-color: black;
+      width: 11rem;
+      height: 2.9rem;
+      color: white;
+      text-transform: uppercase;
+      border: 2px;
+      border-color: black;
+      border-style: solid;
+      
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.35s ease;
+      
+      
+      
+}
+.btnBuy:hover {
+   background-color: white;
+   color: black;
+   
+   border-style: solid;
+}
+.cocktailList{
+   padding-left: 5%;
+   padding-right: 5%;
+   border-top-style: solid;
+   border-top-width: 2px;
+   border-top-color: lightgray;
+
+   
+}
+.cocktailItem{
+   display: flex;
+   justify-content: center;
+   
+}
+.lightGrayBg{
+   background-color: rgb(250,250,250);
+}
+.darkGrayBg{
+   background-color: rgb(245,245,245);
+}
+.cocktailImage {
+   line-height: 0;
+
+   
+}
+.cocktailImage img{
+   height: 28rem;
+}
+.cocktailDescription {
+   
+  margin-left: 6rem;
+  margin-right: 6rem;
+
+}
+.cocktailDescription h3{
+   margin-top: 4rem;
+   font-size: 3rem;
+   font-weight: 100;
+}
+.cocktailDescription h6{
+   margin-top: 1.5rem;
+   font-size: 1.5rem;
+   font-weight: 100;
+}
+   
+/*DONDE ENCONTRARNOS*/
 .salonsHeader{
       display: flex;
       justify-content: space-between;
